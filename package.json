@@ -1,0 +1,26 @@
+{
+  "name": "cobamex",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "prettier --write --plugin-search-dir=. ."
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
+    "prettier": "^2.7.1",
+    "prettier-plugin-svelte": "^2.7.0",
+    "svelte": "^3.44.0",
+    "vite": "^2.9.9"
+  },
+  "dependencies": {
+    "@material/typography": "^14.0.0",
+    "@smui/card": "^6.0.0-beta.16",
+    "@smui/layout-grid": "^6.0.0-beta.16",
+    "@smui/select": "^6.0.0-beta.16",
+    "@smui/textfield": "^6.0.0-beta.16"
+  }
+}
