@@ -1,11 +1,11 @@
 <script>
   import Select from "../../components/Select.svelte";
   import basics from "../../../catalogs/basics";
-  import indigenous from "./store";
+  import knowsReadWriteAnErrand from "./store";
 </script>
 
 <Select
-  label="De acuerdo a su cultura ¿se considera indígena?"
+  label="¿Sabe leer y escribir un recado?"
   items={basics}
-  value={indigenous}
+  value={knowsReadWriteAnErrand}
 />

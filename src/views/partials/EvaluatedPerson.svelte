@@ -16,6 +16,22 @@
   import Language from "../../lib/containers/Language/index.svelte";
   import Indigenous from "../../lib/containers/Indigenous/index.svelte";
   import Afrodescendant from "../../lib/containers/Afrodescendant/index.svelte";
+  import FederalEntity from "../../lib/containers/FederalEntity/index.svelte";
+  import Municipality from "../../lib/containers/Municipality/index.svelte";
+  import Locality from "../../lib/containers/Locality/index.svelte";
+  import RoadType from "../../lib/containers/RoadType/index.svelte";
+  import RoadName from "../../lib/containers/RoadName/index.svelte";
+  import OutdoorNumber from "../../lib/containers/OutdoorNumber/index.svelte";
+  import IndoorNumber from "../../lib/containers/IndoorNumber/index.svelte";
+  import HousingType from "../../lib/containers/HousingType/index.svelte";
+  import HousingClassification from "../../lib/containers/HousingClassification/index.svelte";
+  import HumanSettlementType from "../../lib/containers/HumanSettlementType/index.svelte";
+  import HumanSettlementName from "../../lib/containers/HumanSettlementName/index.svelte";
+  import ZipCode from "../../lib/containers/ZipCode/index.svelte";
+  import Schooling from "../../lib/containers/Schooling/index.svelte";
+  import KnowsReadWriteAnErrand from "../../lib/containers/KnowsReadWriteAnErrand/index.svelte";
+  import CurrentlyAttendingSchool from "../../lib/containers/CurrentlyAttendingSchool/index.svelte";
+  import AttendingSpecialSchool from "../../lib/containers/AttendingSpecialSchool/index.svelte";
 </script>
 
 <Folio />
@@ -40,4 +56,22 @@
 <Language />
 <Indigenous />
 <Afrodescendant />
+<hr />
+<FederalEntity />
+<Municipality />
+<Locality />
+<RoadType />
+<RoadName />
+<OutdoorNumber />
+<IndoorNumber />
+<HousingType />
+<HousingClassification />
+<HumanSettlementName />
+<HumanSettlementType />
+<ZipCode />
+<hr />
+<Schooling />
+<KnowsReadWriteAnErrand />
+<CurrentlyAttendingSchool />
+<AttendingSpecialSchool />
 <hr />
