@@ -2,10 +2,11 @@
   import Select from "../../components/Select.svelte";
   import mexicanStates from "../../../catalogs/mexican-states";
   import federalEntity from "./store";
+
+  const identifier = 16.1;
+  let label = "Entidad federativa";
+
+  label = `${identifier}. ${label}`;
 </script>
 
-<Select
-  label="Entidad federativa"
-  items={mexicanStates}
-  value={federalEntity}
-/>
+<Select {label} items={mexicanStates} value={federalEntity} />

@@ -6,13 +6,8 @@
 </script>
 
 <Card>
-  <Content>
+	<Content>
     <InnerGrid>
-      <Cell span={12}>
-        <h2 class="mdc-typography--headline6" style="margin: 0;">
-          Datos personales
-        </h2>
-      </Cell>
       <Cell span={12}>
         <EvaluatedPerson />
       </Cell>

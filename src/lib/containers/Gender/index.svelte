@@ -2,6 +2,11 @@
   import Select from "../../components/Select.svelte";
   import genders from "../../../catalogs/genders";
   import gender from "./store";
+
+  const identifier = 9;
+  let label = "Género";
+
+  label = `${identifier}. ${label}`;
 </script>
 
-<Select label="Género" items={genders} value={gender} />
+<Select {label} items={genders} value={gender} />

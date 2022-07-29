@@ -1,4 +1,7 @@
 <script>
+  import { InnerGrid, Cell } from "@smui/layout-grid";
+  import Card, { Content } from "@smui/card";
+
   import Folio from "../../lib/containers/Folio/index.svelte";
   import CURP from "../../lib/containers/CURP/index.svelte";
   import FirstName from "../../lib/containers/FirstName/index.svelte";
@@ -34,44 +37,124 @@
   import AttendingSpecialSchool from "../../lib/containers/AttendingSpecialSchool/index.svelte";
 </script>
 
-<Folio />
-<Date />
-<CURP />
-<hr />
-<FirstName />
-<LastName />
-<SecondName />
-<hr />
-<Nationality />
-<BornCountry />
-<FederalEntityOfBorn />
-<hr />
-<Sex />
-<Gender />
-<hr />
-<BirthDate />
-<Age />
-<hr />
-<OtherLanguage />
-<Language />
-<Indigenous />
-<Afrodescendant />
-<hr />
-<FederalEntity />
-<Municipality />
-<Locality />
-<RoadType />
-<RoadName />
-<OutdoorNumber />
-<IndoorNumber />
-<HousingType />
-<HousingClassification />
-<HumanSettlementName />
-<HumanSettlementType />
-<ZipCode />
-<hr />
-<Schooling />
-<KnowsReadWriteAnErrand />
-<CurrentlyAttendingSchool />
-<AttendingSpecialSchool />
-<hr />
+<Card>
+  <Content>
+    <InnerGrid>
+      <Cell span={12}>
+        <Folio />
+        <Date />
+        <CURP />
+      </Cell>
+    </InnerGrid>
+  </Content>
+</Card>
+
+<Card>
+  <Content>
+    <InnerGrid>
+      <Cell span={12}>
+        <h2 class="mdc-typography--headline6" style="margin: 0;">
+					4. Nombre de la persona evaluada
+        </h2>
+      </Cell>
+      <Cell span={12}>
+        <FirstName />
+        <LastName />
+        <SecondName />
+      </Cell>
+    </InnerGrid>
+  </Content>
+</Card>
+
+<Card>
+  <Content>
+    <InnerGrid>
+      <Cell span={12}>
+        <Nationality />
+        <BornCountry />
+        <FederalEntityOfBorn />
+      </Cell>
+    </InnerGrid>
+  </Content>
+</Card>
+
+<Card>
+  <Content>
+    <InnerGrid>
+      <Cell span={12}>
+        <Sex />
+        <Gender />
+      </Cell>
+    </InnerGrid>
+  </Content>
+</Card>
+
+<Card>
+  <Content>
+    <InnerGrid>
+      <Cell span={12}>
+        <BirthDate />
+        <Age />
+      </Cell>
+    </InnerGrid>
+  </Content>
+</Card>
+
+<Card>
+  <Content>
+    <InnerGrid>
+      <Cell span={12}>
+        <OtherLanguage />
+        <Language />
+        <Indigenous />
+        <Afrodescendant />
+      </Cell>
+    </InnerGrid>
+  </Content>
+</Card>
+
+<Card>
+  <Content>
+    <InnerGrid>
+      <Cell span={12}>
+        <h2 class="mdc-typography--headline6" style="margin: 0;">
+					16. Nombre de la persona evaluada
+        </h2>
+      </Cell>
+			
+      <Cell span={12}>
+        <FederalEntity />
+        <Municipality />
+        <Locality />
+        <RoadType />
+        <RoadName />
+        <OutdoorNumber />
+        <IndoorNumber />
+        <HousingType />
+        <HousingClassification />
+        <HumanSettlementName />
+        <HumanSettlementType />
+        <ZipCode />
+      </Cell>
+    </InnerGrid>
+  </Content>
+</Card>
+
+<Card>
+  <Content>
+    <InnerGrid>
+      <Cell span={12}>
+        <h2 class="mdc-typography--headline6" style="margin: 0;">
+					17. Escolaridad
+        </h2>
+      </Cell>
+			
+      <Cell span={12}>
+        <Schooling />
+        <KnowsReadWriteAnErrand />
+        <CurrentlyAttendingSchool />
+        <AttendingSpecialSchool />
+      </Cell>
+    </InnerGrid>
+  </Content>
+</Card>

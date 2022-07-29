@@ -2,10 +2,11 @@
   import Select from "../../components/Select.svelte";
   import basics from "../../../catalogs/basics";
   import knowsReadWriteAnErrand from "./store";
+
+  const identifier = 15.2;
+  let label = "¿Sabe leer y escribir un recado?";
+
+  label = `${identifier}. ${label}`;
 </script>
 
-<Select
-  label="¿Sabe leer y escribir un recado?"
-  items={basics}
-  value={knowsReadWriteAnErrand}
-/>
+<Select {label} items={basics} value={knowsReadWriteAnErrand} />

@@ -4,9 +4,12 @@ body {
   margin: 0;
 }
 
-hr {
-  border-width: 0;
-  margin-bottom: 30px;
+.mdc-card {
+  margin-top: 2em;
+}
+
+.mdc-card:first-child {
+  margin-top: 0;
 }
 
 .mdc-text-field__input::-webkit-calendar-picker-indicator {
