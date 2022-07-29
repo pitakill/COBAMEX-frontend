@@ -1,8 +1,8 @@
 <script>
-  import LayoutGrid, { Cell, InnerGrid } from "@smui/layout-grid";
-  import Card, { Content } from "@smui/card";
+  import LayoutGrid, { Cell, InnerGrid } from '@smui/layout-grid';
+  import Card, { Content } from '@smui/card';
 
-  import SociodemographicData from "./views/SociodemographicData.svelte";
+  import SociodemographicData from './views/SociodemographicData.svelte';
 </script>
 
 <LayoutGrid>
