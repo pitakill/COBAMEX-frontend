@@ -1,6 +1,12 @@
 <script>
-  import Input from "../../components/Input.svelte";
-  import lastname from "./store";
+  export let identifier = 4.2;
+
+  import Input from '../../components/Input.svelte';
+  import lastname from './store';
+
+  let label = 'Primer apellido';
+
+  label = `${identifier}. ${label}`;
 </script>
 
-<Input label="Primer apellido" value={lastname} />
+<Input {label} value={lastname} />

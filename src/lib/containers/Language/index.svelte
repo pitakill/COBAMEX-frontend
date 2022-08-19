@@ -2,6 +2,11 @@
   import Select from "../../components/Select.svelte";
   import languages from "../../../catalogs/languages";
   import language from "./store";
+
+  const identifier = 12.1;
+  let label = "¿Cuál?";
+
+  label = `${identifier}. ${label}`;
 </script>
 
-<Select label="¿Cuál otra lengua habla?" items={languages} value={language} />
+<Select {label} items={languages} value={language} />
