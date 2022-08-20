@@ -1,20 +1,17 @@
 <script>
-  import LayoutGrid, { Cell, InnerGrid } from '@smui/layout-grid';
-  import Card, { Content } from '@smui/card';
+  import { Router, Route } from 'svelte-navigator';
 
+  import Menu from './views/Menu.svelte';
+  import Home from './views/Home.svelte';
   import SociodemographicData from './views/SociodemographicData.svelte';
 </script>
 
-<LayoutGrid>
-  <Cell spanDevices={{ phone: 12, tablet: 12, desktop: 6 }}>
-    <Card>
-      <Content>
-        <InnerGrid>
-          <Cell span={12}>
-            <SociodemographicData />
-          </Cell>
-        </InnerGrid>
-      </Content>
-    </Card>
-  </Cell>
-</LayoutGrid>
+<Router basepath="/COBAMEX-frontend">
+  <Menu />
+  <Route path="">
+    <Home />
+  </Route>
+  <Route path="datos-sociodemograficos">
+    <SociodemographicData />
+  </Route>
+</Router>
