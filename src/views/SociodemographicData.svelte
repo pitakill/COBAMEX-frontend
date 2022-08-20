@@ -1,16 +1,16 @@
 <script>
-  import { InnerGrid, Cell } from '@smui/layout-grid';
+  import LayoutGrid, { Cell } from '@smui/layout-grid';
   import Card, { Content } from '@smui/card';
 
   import EvaluatedPerson from './partials/EvaluatedPerson.svelte';
 </script>
 
-<Card>
-  <Content>
-    <InnerGrid>
-      <Cell span={12}>
+<LayoutGrid>
+  <Cell spanDevices={{ phone: 12, tablet: 12, desktop: 6 }}>
+    <Card>
+      <Content>
         <EvaluatedPerson />
-      </Cell>
-    </InnerGrid>
-  </Content>
-</Card>
+      </Content>
+    </Card>
+  </Cell>
+</LayoutGrid>
